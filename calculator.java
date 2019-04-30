@@ -22,12 +22,12 @@ public class JavaProgram
             choice = scan.next().charAt(0);
             switch(choice)
             {
-                case '1' : System.out.print("Enter Two Number : ");
-                    a = scan.nextFloat();
+                case '1' : System.out.print ("Enter Two number : ");
+		    a = scan.nextFloat();
                     b = scan.nextFloat();
-                    res = a + b;
-                    System.out.print("Result = " + res);
-                    break;                
+                    res = a - b;
+		    System.out.print("Result = " + res);
+                    break;
             }
             System.out.print("\n---------------------------------------\n");
         }while(choice != 5);       
