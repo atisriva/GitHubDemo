@@ -6,7 +6,7 @@ public class JavaProgram
 {
     public static void main(String args[])
     {
-        float a, b, res;
+        float a, b, res1;
         char choice, ch;
         Scanner scan = new Scanner(System.in);
 	//Start of do loop - Conditional statement	
@@ -25,7 +25,7 @@ public class JavaProgram
                 case '1' : System.out.print ("Enter Two number : ");
 		    a = scan.nextFloat();
                     b = scan.nextFloat();
-                    res = a - b;
+                    res1 = a - b;//Logic for substraction
 		    System.out.print("Result = " + res);
                     break;
             }
