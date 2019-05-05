@@ -6,10 +6,10 @@ public class JavaProgram
 {
     public static void main(String args[])
     {
-        float a, b, res1;
+        float a, b, res;
         char choice, ch;
         Scanner scan = new Scanner(System.in);
-	//Start of do loop - Conditional statement	
+		
         do
         {
             System.out.print("1. Addition\n");
@@ -17,16 +17,37 @@ public class JavaProgram
             System.out.print("3. Multiplication\n");
             System.out.print("4. Division\n");
             System.out.print("5. Exit\n\n");
-            //User is prompted to enter the choice of calculation
-	    System.out.print("Enter Your Choice : ");
+            System.out.print("Enter Your Choice : ");
             choice = scan.next().charAt(0);
             switch(choice)
             {
-                case '1' : System.out.print ("Enter Two number : ");
-		    a = scan.nextFloat();
+                case '1' : System.out.print("Enter Two Number : ");
+                    a = scan.nextFloat();
                     b = scan.nextFloat();
-                    res1 = a - b;//Logic for substraction
-		    System.out.print("Result = " + res);
+                    res = a + b;
+                    System.out.print("Result = " + res);
+                    break;
+                case '2' : System.out.print("Enter Two Number : ");
+                    a = scan.nextFloat();
+                    b = scan.nextFloat();
+                    res = a - b;
+                    System.out.print("Result = " + res);
+                    break;
+                case '3' : System.out.print("Enter Two Number : ");
+                    a = scan.nextFloat();
+                    b = scan.nextFloat();
+                    res = a * b;
+                    System.out.print("Result = " + res);
+                    break;
+                case '4' : System.out.print("Enter Two Number : ");
+                    a = scan.nextFloat();
+                    b = scan.nextFloat();
+                    res = a / b;
+                    System.out.print("Result = " + res);
+                    break;
+                case '5' : System.exit(0);
+                    break;
+                default : System.out.print("Wrong Choice!!!");
                     break;
             }
             System.out.print("\n---------------------------------------\n");
